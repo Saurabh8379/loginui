@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:loginui/adduser.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -24,17 +23,14 @@ class _MyLoginState extends State<MyLogin> {
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
               child: Text('RoboInfoCom\n'
-                  'Welcome\nBack',
+                'Welcome\nBack',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),
             SingleChildScrollView(
               child: Container(
                 padding: EdgeInsets.only(
-                    top: MediaQuery
-                        .of(context)
-                        .size
-                        .height * 0.5),
+                    top: MediaQuery.of(context).size.height * 0.5),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -82,9 +78,7 @@ class _MyLoginState extends State<MyLogin> {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () {
-                                      Navigator.push(context, MaterialPageRoute(builder: (context) => Adduser()));
-                                    },
+                                    onPressed: () {},
                                     icon: Icon(
                                       Icons.arrow_forward,
                                     )),
