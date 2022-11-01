@@ -22,7 +22,7 @@ class _MyLoginState extends State<MyLogin> {
             Container(),
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
-              child: Text(
+              child: Text('RoboInfoCom\n'
                 'Welcome\nBack',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
