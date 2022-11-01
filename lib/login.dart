@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:loginui/abc.dart';
+import 'package:loginui/depak.dart';
+import 'package:loginui/register.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -78,17 +81,19 @@ class _MyLoginState extends State<MyLogin> {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => deepak()));
+                                    },
                                     icon: Icon(
                                       Icons.arrow_forward,
                                     )),
-                              )
+                              ),
                             ],
                           ),
                           SizedBox(
                             height: 40,
                           ),
-                          Row(
+                          Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,
                             children: [
                               TextButton(
@@ -105,6 +110,18 @@ class _MyLoginState extends State<MyLogin> {
                                 ),
                                 style: ButtonStyle(),
                               ),
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundColor: Color(0xff4c505b),
+                                child: IconButton(
+                                    color: Colors.white,
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => MyRegister()));
+                                    },
+                                    icon: Icon(
+                                      Icons.arrow_forward,
+                                    )),
+                              ),
                               TextButton(
                                   onPressed: () {},
                                   child: Text(
@@ -115,6 +132,18 @@ class _MyLoginState extends State<MyLogin> {
                                       fontSize: 18,
                                     ),
                                   )),
+                              CircleAvatar(
+                                radius: 30,
+                                backgroundColor: Color(0xff4c505b),
+                                child: IconButton(
+                                    color: Colors.white,
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context) => abc()));
+                                    },
+                                    icon: Icon(
+                                      Icons.arrow_forward,
+                                    )),
+                              ),
                             ],
                           )
                         ],
