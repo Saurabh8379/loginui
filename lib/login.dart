@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:loginui/xyz.dart';
 
 class MyLogin extends StatefulWidget {
   const MyLogin({Key? key}) : super(key: key);
@@ -23,7 +24,7 @@ class _MyLoginState extends State<MyLogin> {
             Container(
               padding: EdgeInsets.only(left: 35, top: 130),
               child: Text(
-                'Welcome\nBack',
+                'Welcome',
                 style: TextStyle(color: Colors.white, fontSize: 33),
               ),
             ),
@@ -78,7 +79,9 @@ class _MyLoginState extends State<MyLogin> {
                                 backgroundColor: Color(0xff4c505b),
                                 child: IconButton(
                                     color: Colors.white,
-                                    onPressed: () {},
+                                    onPressed: () {
+                                      Navigator.push(context, MaterialPageRoute(builder: (context)=> xyz()));
+                                    },
                                     icon: Icon(
                                       Icons.arrow_forward,
                                     )),
@@ -106,7 +109,9 @@ class _MyLoginState extends State<MyLogin> {
                                 style: ButtonStyle(),
                               ),
                               TextButton(
-                                  onPressed: () {},
+                                  onPressed: () {
+
+                                  },
                                   child: Text(
                                     'Forgot Password',
                                     style: TextStyle(
